@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 400px; margin: 50px auto; text-align: center; }
+        a { display: inline-block; margin: 10px; padding: 10px 20px; text-decoration: none;
+            background: #4CAF50; color: white; border-radius: 5px; }
+        a.login { background: #2196F3; }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать</h1>
+    <a class="login" href="{{ url_for('login') }}">Войти</a>
+    <a href="{{ url_for('register') }}">Зарегистрироваться</a>
+</body>
+</html>
