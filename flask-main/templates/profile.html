@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 400px; margin: 50px auto; text-align: center; }
+        a { display: inline-block; margin-top: 20px; padding: 10px 20px;
+            background: #f44336; color: white; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Привет, {{ username }}!</h1>
+    <p>Вы успешно вошли в систему.</p>
+    <a href="{{ url_for('logout') }}">Выйти</a>
+</body>
+</html>
